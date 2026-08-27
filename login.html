@@ -1,62 +1,62 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consultorio Psicológico Norte</title>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="/css/global.css">
-    <link rel="stylesheet" href="/css/login.css">
-</head>
-<body>
-    <main class="view-login">
-        <section class="login-card">
-            <header class="login-brand">
-                <div class="logo-circle">N</div>
-                <span class="logo-name">Norte</span>
-            </header>
-        
-            <h1 class="login-title">Bienvenido</h1>
-            <p class="login-subtitle">Accede a tu área personal</p>
-            <form class="login-form" action="index.html">
-                <label class="field">
-                    <span class="field-label">Correo electrónico</span>
-                    <input type="email" name="email" placeholder="nombre@correo.com" autocomplete="email" required/>
-                </label>
-                <label class="field">
-                    <span class="field-label">Contraseña</span>
-                    <input type="password" name="contraseña" placeholder="********" autocomplete="current-password" required/>
-                </label>
-                <div class="login-options">
-                    <label class="checkbox-row">
-                        <input type="checkbox" name="remember" />
-                        <span class="checkbox-label">Recordarme</span>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Consultorio Psicológico Norte</title>
+        <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="/css/global.css">
+        <link rel="stylesheet" href="/css/login.css">
+    </head>
+    <body>
+        <main class="view-login">
+            <section class="login-card">
+                <header class="login-brand">
+                    <div class="logo-circle">N</div>
+                    <span class="logo-name">Norte</span>
+                </header>
+            
+                <h1 class="login-title">Bienvenido</h1>
+                <p class="login-subtitle">Accede a tu área personal</p>
+                <form class="login-form" action="dashboard.html">
+                    <label class="field">
+                        <span class="field-label">Correo electrónico</span>
+                        <input type="email" name="email" placeholder="nombre@correo.com" autocomplete="email" required/>
                     </label>
-                    <a href="#" class="link-muted">¿Olvidaste tu contraseña?</a>
-                </div>
-                <div class="login-role">
-                    <span class="field-label">Iniciar sesión como</span>
-                    <div class="role-toggle">
-                        <input type="radio" name="role" value="paciente" id="role-paciente" checked />
-                        <label for="role-paciente">Paciente</label>
-                        <input type="radio" name="role" value="psicologo" id="role-psicologo" />
-                        <label for="role-psicologo">Psicólogo</label>
+                    <label class="field">
+                        <span class="field-label">Contraseña</span>
+                        <input type="password" name="contraseña" placeholder="********" autocomplete="current-password" required/>
+                    </label>
+                    <div class="login-options">
+                        <label class="checkbox-row">
+                            <input type="checkbox" name="remember" />
+                            <span class="checkbox-label">Recordarme</span>
+                        </label>
+                        <a href="#" class="link-muted">¿Olvidaste tu contraseña?</a>
                     </div>
+                    <div class="login-role">
+                        <span class="field-label">Iniciar sesión como</span>
+                        <div class="role-toggle">
+                            <input type="radio" name="role" value="paciente" id="role-paciente" checked />
+                            <label for="role-paciente">Paciente</label>
+                            <input type="radio" name="role" value="psicologo" id="role-psicologo" />
+                            <label for="role-psicologo">Psicólogo</label>
+                        </div>
+                    </div>
+                    <button class="button button-primary">Iniciar sesión</button>
+                    <p class="login-footer">¿No tienes cuenta? 
+                        <a href="#" class="link-accent">Solicitar cita</a>
+                    </p>
+                </form>
+            </section>
+            <aside class="login-aside">
+                <img src="https://images.pexels.com/photos/7176053/pexels-photo-7176053.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Sesión de terapia" />
+                <div class="login-aside-overlay">
+                    <blockquote>
+                        "El primer paso hacia el bienestar es permitirse pedir ayuda."
+                    </blockquote>
                 </div>
-                <button class="button button-primary">Iniciar sesión</button>
-                <p class="login-footer">¿No tienes cuenta? 
-                    <a href="#" class="link-accent">Solicitar cita</a>
-                </p>
-            </form>
-        </section>
-        <aside class="login-aside">
-            <img src="https://images.pexels.com/photos/7176053/pexels-photo-7176053.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Sesión de terapia" />
-            <div class="login-aside-overlay">
-                <blockquote>
-                    "El primer paso hacia el bienestar es permitirse pedir ayuda."
-                </blockquote>
-            </div>
-        </aside>
-    </main>
-</body>
+            </aside>
+        </main>
+    </body>
 </html>
