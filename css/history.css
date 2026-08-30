@@ -1,0 +1,125 @@
+.patient-banner{
+  background: var(--color-primary-50);
+  padding: 1.5rem;
+  border-radius: var(--r-md);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.patient-banner-actions{
+  margin-left: auto;
+  display: flex;
+  gap: .5rem;
+  flex-wrap: wrap;
+}
+
+.data-list{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: .75rem;
+}
+
+.data-list dt{
+    font-size: .85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--color-neutral);
+    letter-spacing: .04em;
+}
+
+.data-list dd{
+    font-size: .95rem;
+    color: var(--color-neutral);
+    padding-left: 1rem;
+    margin-bottom: .4rem;
+}
+
+.timeline{
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.timeline::before{
+    content: "";
+    position: absolute;
+    left: 6px;
+    top: 4px;
+    bottom: 4px;
+    width: 2px;
+    background: var(--color-neutral);
+}
+
+.timeline-item{
+    position: relative;
+    padding-bottom: 1.5rem;
+}
+
+.timeline-item:last-child{
+    padding-bottom: 0;
+}
+
+.timeline-dot{
+    position: absolute;
+    left: -1.5rem;
+    top: 4px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--color-primary);
+    border: 2px solid var(--color-light-neutral);
+    box-shadow: 0 0 0 2px var(--color-primary-50);
+}
+
+.timeline-date{
+    font-size: .78rem;
+    color: var(--color-primary);
+    font-weight: 600;
+}
+
+.timeline-content h3{
+    font-size: .95rem;
+    font-weight: 600;
+    color: var(--color-neutral);
+    margin: .15rem 0 .25rem;
+}
+
+.timeline-content p{
+    font-size: .9rem;
+    color: var(--color-neutral);
+    line-height: 1.4;
+}
+
+.notes-list{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: .75rem;
+}
+
+.note-card{
+    padding: 1rem;
+    border-radius: var(--r-sm);
+    background: var(--color-light-neutral);
+    border-left: 3px solid var(--color-primary);
+}
+
+.note-card header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: .5rem;
+}
+
+.note-card p{
+    font-size: .9rem;
+    color: var(--color-neutral);
+}
+
+.note-date{
+    font-size: .78rem;
+    color: var(--color-primary);
+    font-weight: 600;
+    margin-bottom: .25rem;
+}
