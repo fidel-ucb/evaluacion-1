@@ -7,6 +7,8 @@
     --color-light-neutral: #ffffff;
     --color-accent: #3d9b96;
     --color-secondary: #d4ba9b;
+    --color-warning: #f5a623;
+    --color-success: #4f8266;
 
     /*Typography */
     --font-primary: 'Fraunces', Georgia, serif;
@@ -21,6 +23,11 @@
     /*transitions */
     --t-fast: .2s ease;
     --t-medium: .4s ease;
+
+    /*shadows */
+    --shadow-sm: 0 1px 3px rgba(31,51,41,.08);
+    --shadow-md: 0 4px 16px rgba(31,51,41,.10);
+    --shadow-lg: 0 12px 40px rgba(31,51,41,.14);
 }
 
 *{
@@ -82,7 +89,7 @@ img{
     letter-spacing: .04rem;
 }
 
-input[type="email"], input[type="password"]{
+input[type="email"], input[type="password"], input[type="text"], input[type="tel"], input[type="date"], input[type="time"], input[type="search"], select, textarea{
     padding: .7rem .9rem;
     border: 1.5px solid var(--color-neutral);
     border-radius: var(--r-sm);
@@ -145,12 +152,49 @@ input:focus{
     box-shadow: 0 0 0 3px rgba(79, 130, 102, .2);
 }
 
+.button-ghost{
+    background: transparent;
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+.button-ghost:hover{
+    background: var(--color-primary);
+    color: var(--color-light-neutral);
+}
+
+.button-link{
+    background: transparent;
+    color: var(--color-primary);
+    border-color: transparent;
+    font-size: .85rem;
+}
+
+.button-icon{
+    width: 36px; 
+    height: 36px;
+    border-radius: 50%;
+    border: 1.5px solid var(--color-neutral);
+    background: #fff;
+    cursor: pointer;
+    font-size: 1.1rem;
+    color: var(--color-neutral);
+    transition: all var(--t-fast);
+}
+
+.button-link:hover{
+    text-decoration: underline;
+}
+
+.button-sm{
+    padding: .45rem .9rem;
+    font-size: .82rem;
+}
+
 .link-accent{
     color: var(--color-primary);
     font-weight: 600;
 }
-
-
 
 .nav-item{
     padding: .7rem 1rem;
@@ -187,6 +231,12 @@ input:focus{
     font-size: .75rem;
     font-weight: 600;
     flex-shrink: 0;
+}
+
+.avatar-lg{
+    width: 50px; 
+    height: 50px;
+    font-size: 1.1rem;
 }
 
 .user-name{
@@ -314,3 +364,24 @@ input:focus{
     color: var(--color-light-neutral);
 }
 
+.badge-active{
+    background: var(--color-success);
+    color: var(--color-light-neutral);
+}
+
+.badge-pending{
+    background: var(--color-warning);
+    color: var(--color-light-neutral);
+    opacity: .5;
+}
+
+.badge-inactive{
+    background: var(--color-neutral);
+    color: var(--color-light-neutral);
+    opacity: .5;
+}
+
+.badge-info{
+    background: #e8f0f8;
+    color: var(--color-neutral);
+}

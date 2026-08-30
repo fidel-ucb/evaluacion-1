@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultorio Psicológico Norte</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/sidebar.css">
+    <link rel="stylesheet" href="/css/history.css">
+</head>
+
+<body>
+    <main class="view-general">
+        <aside class="sidebar">
+            <div class="sidebar-brand">
+                <div class="logo-circle">N</div>
+                <span class="logo-name">Norte</span>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="/dashboard.html" class="nav-item">Área Profesional</a>
+                <a href="/patient-dashboard.html" class="nav-item">Área Paciente</a>
+                <a href="/history.html" class="nav-item">Historial Clínico</a>
+                <a href="/patient-manager.html" class="nav-item">Gestor de Pacientes</a>
+                <a href="/planner.html" class="nav-item">Agenda</a>
+            </nav>
+            <div class="sidebar-footer">
+                <div class="user-mini">
+                    <div class="avatar">J</div>
+                    <div>
+                        <p class="user-name">Javier Suarez</p>
+                        <p class="user-role">Psicólogo clínico</p>
+                    </div>
+                </div>
+                <a href="/login.html" class="nav-item">Cerrar sesión</a>
+            </div>
+        </aside>
+        <section class="view-content">
+            <header class="page-header">
+                <h1 class="page-title">Historial clínico</h1>
+                <p class="page-lead">Registro confidencial de evolución y tratamientos.</p>
+            </header>
+
+            <div class="patient-banner">
+                <div class="avatar avatar-lg">ML</div>
+                <div>
+                    <h2>María López García</h2>
+                    <p>32 años · Ficha nº 0042 · Alta: 15/03/2025</p>
+                </div>
+                <div class="patient-banner-actions">
+                    <button class="button button-ghost button-sm">Exportar PDF</button>
+                    <button class="button button-primary button-sm">Nueva entrada</button>
+                </div>
+            </div>
+
+            <div class="two-col">
+                <section class="panel">
+                    <h2 class="panel-title">Diagnóstico y tratamiento</h2>
+                    <dl class="data-list">
+                        <dt>Diagnóstico principal</dt>
+                        <dd>Trastorno de ansiedad generalizada (F41.1)</dd>
+                        <dt>Enfoque terapéutico</dt>
+                        <dd>TCC — Terapia cognitivo-conductual</dd>
+                        <dt>Sesiones semanales</dt>
+                        <dd>1 sesión de 50 min</dd>
+                        <dt>Objetivos</dt>
+                        <dd>Reducción de sintomatología ansiosa, manejo de pensamiento catastrófico</dd>
+                        <dt>Medicación</dt>
+                        <dd>Sin prescripción farmacológica</dd>
+                    </dl>
+                </section>
+
+                <section class="panel">
+                    <h2 class="panel-title">Evolución</h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-date">15/03/2025</span>
+                                <h3>Primera consulta</h3>
+                                <p>Evaluación inicial. Ansiedad moderada. Se establece plan de 12 sesiones.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-date">22/03/2025</span>
+                                <h3>Sesión 2</h3>
+                                <p>Identificación de pensamientos automáticos. Se introducen técnicas de respiración.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-date">05/04/2025</span>
+                                <h3>Sesión 4</h3>
+                                <p>Mejoría subjetiva. Reducción de crisis de ansiedad de 3/semana a 1/semana.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-date">18/04/2025</span>
+                                <h3>Sesión 6</h3>
+                                <p>Exposición gradual a situaciones evitadas. Buen avance. Próxima revisión de
+                                    objetivos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <section class="panel">
+                <h2 class="panel-title">Notas de sesión</h2>
+                <div class="notes-list">
+                    <article class="note-card">
+                        <header>
+                            <span class="note-date">18/04/2025</span>
+                            <span class="badge badge-info">Sesión 6</span>
+                        </header>
+                        <p>
+                            La paciente refiere sentirse más capaz de afrontar situaciones
+                            sociales. Se trabajó reestructuración cognitiva sobre el miedo
+                            al juicio. Tarea: registro de pensamientos entre sesiones.
+                        </p>
+                    </article>
+                    <article class="note-card">
+                        <header>
+                            <span class="note-date">05/04/2025</span>
+                            <span class="badge badge-info">Sesión 4</span>
+                        </header>
+                        <p>
+                            Se revisa registro de ansiedad. Disminución notable. Se
+                            introducen técnicas de exposición imaginada. Buena alianza
+                            terapéutica.
+                        </p>
+                    </article>
+                    <article class="note-card">
+                        <header>
+                            <span class="note-date">22/03/2025</span>
+                            <span class="badge badge-info">Sesión 2</span>
+                        </header>
+                        <p>
+                            Psychoeducación sobre ansiedad. Identificación de
+                            disparadores. Se enseña respiración diafragmática.
+                        </p>
+                    </article>
+                </div>
+            </section>
+        </section>
+    </main>
+</body>
+
+</html>

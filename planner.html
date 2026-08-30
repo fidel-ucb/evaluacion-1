@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultorio Psicológico Norte</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/sidebar.css">
+    <link rel="stylesheet" href="/css/planner.css">
+</head>
+
+<body>
+    <main class="view-general">
+        <aside class="sidebar">
+            <div class="sidebar-brand">
+                <div class="logo-circle">N</div>
+                <span class="logo-name">Norte</span>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="/dashboard.html" class="nav-item">Área Profesional</a>
+                <a href="/patient-dashboard.html" class="nav-item">Área Paciente</a>
+                <a href="/history.html" class="nav-item">Historial Clínico</a>
+                <a href="/patient-manager.html" class="nav-item">Gestor de Pacientes</a>
+                <a href="/planner.html" class="nav-item">Agenda</a>
+            </nav>
+            <div class="sidebar-footer">
+                <div class="user-mini">
+                    <div class="avatar">J</div>
+                    <div>
+                        <p class="user-name">Javier Suarez</p>
+                        <p class="user-role">Psicólogo clínico</p>
+                    </div>
+                </div>
+                <a href="/login.html" class="nav-item">Cerrar sesión</a>
+            </div>
+        </aside>
+        <section class="view-content">
+            <header class="page-header">
+                <h1 class="page-title">Agenda</h1>
+                <p class="page-lead">Gestión de citas y disponibilidad semanal.</p>
+            </header>
+
+            <div class="planner-toolbar">
+                <div class="planner-nav">
+                    <button class="button button-icon">‹</button>
+                    <span class="planner-week">Semana del 25 – 29 ago 2025</span>
+                    <button class="button button-icon">›</button>
+                </div>
+                <div class="planner-legend">
+                    <span><span class="dot dot-online"></span> Online</span>
+                    <span><span class="dot dot-presencial"></span> Presencial</span>
+                    <span><span class="dot dot-bloqueado"></span> No disponible</span>
+                </div>
+            </div>
+
+            <div class="calendar-grid">
+                <!-- Header row -->
+                <div class="cal-hour-col"></div>
+                <div class="cal-day-header">Lun 25</div>
+                <div class="cal-day-header">Mar 26</div>
+                <div class="cal-day-header">Mié 27</div>
+                <div class="cal-day-header">Jue 28</div>
+                <div class="cal-day-header">Vie 29</div>
+
+                <!-- 09:00 -->
+                <div class="cal-hour">09:00</div>
+                <div class="cal-slot">
+                    <div class="cal-event event-online">
+                        <span class="event-time">09:00</span>
+                        <span class="event-name">María López</span>
+                    </div>
+                </div>
+                <div class="cal-slot"></div>
+                <div class="cal-slot">
+                    <div class="cal-event event-online">
+                        <span class="event-time">09:00</span>
+                        <span class="event-name">Ana Torres</span>
+                    </div>
+                </div>
+                <div class="cal-slot"></div>
+                <div class="cal-slot">
+                    <div class="cal-event event-presencial">
+                        <span class="event-time">09:30</span>
+                        <span class="event-name">Familia Vega</span>
+                    </div>
+                </div>
+
+                <!-- 10:00 -->
+                <div class="cal-hour">10:00</div>
+                <div class="cal-slot"></div>
+                <div class="cal-slot">
+                    <div class="cal-event event-presencial">
+                        <span class="event-time">10:00</span>
+                        <span class="event-name">Carlos Ruiz</span>
+                    </div>
+                </div>
+                <div class="cal-slot"></div>
+                <div class="cal-slot">
+                    <div class="cal-event event-online">
+                        <span class="event-time">10:30</span>
+                        <span class="event-name">María López</span>
+                    </div>
+                </div>
+                <div class="cal-slot"></div>
+
+                <!-- 11:00 -->
+                <div class="cal-hour">11:00</div>
+                <div class="cal-slot">
+                    <div class="cal-event event-online">
+                        <span class="event-time">11:00</span>
+                        <span class="event-name">Sara Pérez</span>
+                    </div>
+                </div>
+                <div class="cal-slot"></div>
+                <div class="cal-slot">
+                    <div class="cal-event event-presencial">
+                        <span class="event-time">11:30</span>
+                        <span class="event-name">Javier Vega</span>
+                    </div>
+                </div>
+                <div class="cal-slot"></div>
+                <div class="cal-slot"></div>
+
+                <!-- 12:00 -->
+                <div class="cal-hour">12:00</div>
+                <div class="cal-slot">
+                    <div class="cal-event event-online">
+                        <span class="event-time">12:00</span>
+                        <span class="event-name">Ana Torres</span>
+                    </div>
+                </div>
+                <div class="cal-slot"></div>
+                <div class="cal-slot cal-blocked"></div>
+                <div class="cal-slot"></div>
+                <div class="cal-slot">
+                    <div class="cal-event event-presencial">
+                        <span class="event-time">12:00</span>
+                        <span class="event-name">Grupo mindfulness</span>
+                    </div>
+                </div>
+
+                <!-- 13:00 -->
+                <div class="cal-hour">13:00</div>
+                <div class="cal-slot cal-blocked"></div>
+                <div class="cal-slot cal-blocked"></div>
+                <div class="cal-slot cal-blocked"></div>
+                <div class="cal-slot cal-blocked"></div>
+                <div class="cal-slot cal-blocked"></div>
+
+                <!-- 14:00 -->
+                <div class="cal-hour">14:00</div>
+                <div class="cal-slot cal-blocked"></div>
+                <div class="cal-slot cal-blocked"></div>
+                <div class="cal-slot cal-blocked"></div>
+                <div class="cal-slot cal-blocked"></div>
+                <div class="cal-slot cal-blocked"></div>
+
+                <!-- 15:00 -->
+                <div class="cal-hour">15:00</div>
+                <div class="cal-slot"></div>
+                <div class="cal-slot">
+                    <div class="cal-event event-online">
+                        <span class="event-time">15:00</span>
+                        <span class="event-name">Reunión equipo</span>
+                    </div>
+                </div>
+                <div class="cal-slot"></div>
+                <div class="cal-slot"></div>
+                <div class="cal-slot"></div>
+
+                <!-- 16:00 -->
+                <div class="cal-hour">16:00</div>
+                <div class="cal-slot">
+                    <div class="cal-event event-presencial">
+                        <span class="event-time">16:00</span>
+                        <span class="event-name">Familia Vega</span>
+                    </div>
+                </div>
+                <div class="cal-slot"></div>
+                <div class="cal-slot">
+                    <div class="cal-event event-online">
+                        <span class="event-time">16:00</span>
+                        <span class="event-name">Carlos Ruiz</span>
+                    </div>
+                </div>
+                <div class="cal-slot"></div>
+                <div class="cal-slot">
+                    <div class="cal-event event-presencial">
+                        <span class="event-time">16:30</span>
+                        <span class="event-name">Sara Pérez</span>
+                    </div>
+                </div>
+
+                <!-- 17:00 -->
+                <div class="cal-hour">17:00</div>
+                <div class="cal-slot"></div>
+                <div class="cal-slot">
+                    <div class="cal-event event-online">
+                        <span class="event-time">17:00</span>
+                        <span class="event-name">María López</span>
+                    </div>
+                </div>
+                <div class="cal-slot"></div>
+                <div class="cal-slot">
+                    <div class="cal-event event-online">
+                        <span class="event-time">17:00</span>
+                        <span class="event-name">Javier Vega</span>
+                    </div>
+                </div>
+                <div class="cal-slot"></div>
+
+                <!-- 18:00 -->
+                <div class="cal-hour">18:00</div>
+                <div class="cal-slot">
+                    <div class="cal-event event-presencial">
+                        <span class="event-time">18:00</span>
+                        <span class="event-name">Ana Torres</span>
+                    </div>
+                </div>
+                <div class="cal-slot"></div>
+                <div class="cal-slot"></div>
+                <div class="cal-slot"></div>
+                <div class="cal-slot">
+                    <div class="cal-event event-online">
+                        <span class="event-time">18:00</span>
+                        <span class="event-name">Carlos Ruiz</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="planner-side">
+                <section class="panel">
+                    <h2 class="panel-title">Detalle del día</h2>
+                    <p class="muted-sm">Jueves 28 de agosto</p>
+                    <ul class="list-rows">
+                        <li>
+                            <div class="row-main">
+                                <span class="row-time">10:30</span>
+                                <span class="row-name">María López</span>
+                            </div>
+                            <span class="badge badge-online">Online</span>
+                        </li>
+                        <li>
+                            <div class="row-main">
+                                <span class="row-time">17:00</span>
+                                <span class="row-name">Javier Vega</span>
+                            </div>
+                            <span class="badge badge-online">Online</span>
+                        </li>
+                    </ul>
+                </section>
+                <section class="panel">
+                    <h2 class="panel-title">Nueva cita rápida</h2>
+                    <form class="quick-form" onsubmit="return false">
+                        <label class="field">
+                            <span class="field-label">Paciente</span>
+                            <select>
+                                <option>María López</option>
+                                <option>Carlos Ruiz</option>
+                                <option>Ana Torres</option>
+                            </select>
+                        </label>
+                        <div class="form-row">
+                            <label class="field">
+                                <span class="field-label">Día</span>
+                                <input type="date" />
+                            </label>
+                            <label class="field">
+                                <span class="field-label">Hora</span>
+                                <input type="time" />
+                            </label>
+                        </div>
+                        <label class="field">
+                            <span class="field-label">Modalidad</span>
+                            <select>
+                                <option>Online</option>
+                                <option>Presencial</option>
+                            </select>
+                        </label>
+                        <button class="button button-primary btn-block">Reservar</button>
+                    </form>
+                </section>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
