@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Consultorio Psicológico Norte</title>
+        <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="/css/global.css">
+        <link rel="stylesheet" href="/css/dashboard.css">
+        <link rel="stylesheet" href="/css/sidebar.css">
+    </head>
+    <body>
+        <main class="view-general">
+            <aside class="sidebar">
+                <div class="sidebar-brand">
+                    <div class="logo-circle">N</div>
+                    <span class="logo-name">Norte</span>
+                </div>
+                <nav class="sidebar-nav">
+                    <a href="/dashboard.html" class="nav-item">Área Profesional</a>
+                    <a href="/client-dashboard.html" class="nav-item">Área Paciente</a>
+                    <a href="/history.html" class="nav-item">Historial Clínico</a>
+                    <a href="/patients.html" class="nav-item">Gestor de Pacientes</a>
+                    <a href="/agenda.html" class="nav-item">Agenda</a>
+                </nav>
+                <div class="sidebar-footer">
+                    <div class="user-mini">
+                        <div class="avatar">J</div>
+                        <div>
+                        <p class="user-name">Javier Suarez</p>
+                        <p class="user-role">Psicólogo clínico</p>
+                        </div>
+                    </div>
+                    <a href="/login.html" class="nav-item">Cerrar sesión</a>
+                </div>
+            </aside>
+            <section class="view-content">
+            <header class="page-header">
+                <h1 class="page-title">Área del profesional</h1>
+                <p class="page-lead">Panel de gestión para el equipo terapéutico.</p>
+            </header>
+
+            <div class="dashboard-grid">
+                <div class="dash-card">
+                <p class="dash-label">Citas hoy</p>
+                <p class="dash-value">4</p>
+                <p class="dash-sub">2 presenciales · 2 online</p>
+                </div>
+                <div class="dash-card">
+                <p class="dash-label">Pacientes activos</p>
+                <p class="dash-value">25</p>
+                <p class="dash-sub">3 nuevos esta semana</p>
+                </div>
+                <div class="dash-card">
+                <p class="dash-label">Pendientes</p>
+                <p class="dash-value">5</p>
+                <p class="dash-sub">Informes por redactar</p>
+                </div>
+                <div class="dash-card">
+                <p class="dash-label">Disponibilidad</p>
+                <p class="dash-value">L–V</p>
+                <p class="dash-sub">9:00 – 19:00</p>
+                </div>
+            </div>
+
+            <div class="two-col">
+                <section class="panel">
+                    <h2 class="panel-title">Próximas citas</h2>
+                    <ul class="list-rows">
+                        <li>
+                        <div class="row-main">
+                            <span class="row-time">09:00</span>
+                            <span class="row-name">María López</span>
+                        </div>
+                        <span class="badge badge-online">Online</span>
+                        </li>
+                        <li>
+                        <div class="row-main">
+                            <span class="row-time">10:30</span>
+                            <span class="row-name">Carlos Ruiz</span>
+                        </div>
+                        <span class="badge badge-presencial">Presencial</span>
+                        </li>
+                        <li>
+                        <div class="row-main">
+                            <span class="row-time">12:00</span>
+                            <span class="row-name">Ana Torres</span>
+                        </div>
+                        <span class="badge badge-online">Online</span>
+                        </li>
+                        <li>
+                        <div class="row-main">
+                            <span class="row-time">16:00</span>
+                            <span class="row-name">Familia Vega</span>
+                        </div>
+                        <span class="badge badge-presencial">Presencial</span>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="panel">
+                    <h2 class="panel-title">Tareas pendientes</h2>
+                    <ul class="task-list">
+                        <li>
+                        <input type="checkbox" id="t1" />
+                        <label for="t1">Redactar informe — Carlos Ruiz</label>
+                        </li>
+                        <li>
+                        <input type="checkbox" id="t2" />
+                        <label for="t2">Revisar evolución — Ana Torres</label>
+                        </li>
+                        <li>
+                        <input type="checkbox" id="t3" />
+                        <label for="t3">Confirmar cita — Familia Vega</label>
+                        </li>
+                        <li>
+                        <input type="checkbox" id="t4" />
+                        <label for="t4">Preparar material sesión grupal</label>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+            </section>
+        </main>
+    </body>
+</html>
