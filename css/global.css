@@ -21,6 +21,11 @@
     /*transitions */
     --t-fast: .2s ease;
     --t-medium: .4s ease;
+
+    /*shadows */
+    --shadow-sm: 0 1px 3px rgba(31,51,41,.08);
+    --shadow-md: 0 4px 16px rgba(31,51,41,.10);
+    --shadow-lg: 0 12px 40px rgba(31,51,41,.14);
 }
 
 *{
@@ -139,6 +144,12 @@ input:focus{
 .button-primary{
     background: var(--color-primary);
     color: var(--color-light-neutral);
+}
+
+.button-ghost{
+    background: transparent;
+    color: var(--color-primary);
+    border-color: var(--color-primary);
 }
 
 .button-primary:hover{
@@ -313,4 +324,3 @@ input:focus{
     background: var(--color-secondary);
     color: var(--color-light-neutral);
 }
-
