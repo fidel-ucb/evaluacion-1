@@ -1,91 +1,94 @@
-<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Consultorio Psicológico Norte</title>
-        <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
-        <link rel="stylesheet" href="/css/global.css">
-        <link rel="stylesheet" href="/css/sidebar.css">
-        <link rel="stylesheet" href="/css/patient-manager.css">
-    </head>
-    <body>
-        <main class="view-general">
-            <aside class="sidebar">
-                <div class="sidebar-brand">
-                    <div class="logo-circle">N</div>
-                    <span class="logo-name">Norte</span>
-                </div>
-                <nav class="sidebar-nav">
-                    <a href="/dashboard.html" class="nav-item">Área Profesional</a>
-                    <a href="/client-dashboard.html" class="nav-item">Área Paciente</a>
-                    <a href="/history.html" class="nav-item">Historial Clínico</a>
-                    <a href="/patient-manager.html" class="nav-item">Gestor de Pacientes</a>
-                    <a href="/agenda.html" class="nav-item">Agenda</a>
-                </nav>
-                <div class="sidebar-footer">
-                    <div class="user-mini">
-                        <div class="avatar">J</div>
-                        <div>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultorio Psicológico Norte</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/sidebar.css">
+    <link rel="stylesheet" href="/css/patient-manager.css">
+</head>
+
+<body>
+    <main class="view-general">
+        <aside class="sidebar">
+            <div class="sidebar-brand">
+                <div class="logo-circle">N</div>
+                <span class="logo-name">Norte</span>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="/dashboard.html" class="nav-item">Área Profesional</a>
+                <a href="/client-dashboard.html" class="nav-item">Área Paciente</a>
+                <a href="/history.html" class="nav-item">Historial Clínico</a>
+                <a href="/patient-manager.html" class="nav-item">Gestor de Pacientes</a>
+                <a href="/agenda.html" class="nav-item">Agenda</a>
+            </nav>
+            <div class="sidebar-footer">
+                <div class="user-mini">
+                    <div class="avatar">J</div>
+                    <div>
                         <p class="user-name">Javier Suarez</p>
                         <p class="user-role">Psicólogo clínico</p>
-                        </div>
                     </div>
-                    <a href="/login.html" class="nav-item">Cerrar sesión</a>
                 </div>
-            </aside>
-            <section class="view-content">
-                <header class="page-header">
-                    <h1 class="page-title">Gestor de pacientes</h1>
-                    <p class="page-lead">Dar de alta, editar y administrar pacientes.</p>
-                </header>
+                <a href="/login.html" class="nav-item">Cerrar sesión</a>
+            </div>
+        </aside>
+        <section class="view-content">
+            <header class="page-header">
+                <h1 class="page-title">Gestor de pacientes</h1>
+                <p class="page-lead">Dar de alta, editar y administrar pacientes.</p>
+            </header>
 
-                <!-- Edición de paciente -->
-                <section class="panel form-panel">
-                    <h2 class="panel-title">Nuevo paciente</h2>
-                    <form class="patient-form" onsubmit="return false">
+            <!-- Edición de paciente -->
+            <section class="panel form-panel">
+                <h2 class="panel-title">Nuevo paciente</h2>
+                <form class="patient-form" onsubmit="return false">
                     <div class="form-row">
                         <label class="field">
-                        <span class="field-label">Nombre *</span>
-                        <input type="text" placeholder="Nombre" required />
+                            <span class="field-label">Nombre *</span>
+                            <input type="text" placeholder="Nombre" required />
                         </label>
                         <label class="field">
-                        <span class="field-label">Apellidos *</span>
-                        <input type="text" placeholder="Apellidos" required />
+                            <span class="field-label">Apellidos *</span>
+                            <input type="text" placeholder="Apellidos" required />
                         </label>
                     </div>
                     <div class="form-row">
                         <label class="field">
-                        <span class="field-label">DNI / NIE</span>
-                        <input type="text" placeholder="00000000X" />
+                            <span class="field-label">DNI / NIE</span>
+                            <input type="text" placeholder="00000000X" />
                         </label>
                         <label class="field">
-                        <span class="field-label">Fecha de nacimiento</span>
-                        <input type="date" />
-                        </label>
-                    </div>
-                    <div class="form-row">
-                        <label class="field">
-                        <span class="field-label">Teléfono</span>
-                        <input type="tel" placeholder="600 000 000" />
-                        </label>
-                        <label class="field">
-                        <span class="field-label">Correo electrónico</span>
-                        <input type="email" placeholder="correo@correo.com" />
+                            <span class="field-label">Fecha de nacimiento</span>
+                            <input type="date" />
                         </label>
                     </div>
                     <div class="form-row">
                         <label class="field">
-                        <span class="field-label">Motivo de consulta</span>
-                        <input type="text" placeholder="Ansiedad, duelo, pareja…" />
+                            <span class="field-label">Teléfono</span>
+                            <input type="tel" placeholder="600 000 000" />
                         </label>
                         <label class="field">
-                        <span class="field-label">Profesional asignado</span>
-                        <select>
-                            <option>Dra. Reyes</option>
-                            <option>Dr. Moral</option>
-                            <option>Dra. Soto</option>
-                        </select>
+                            <span class="field-label">Correo electrónico</span>
+                            <input type="email" placeholder="correo@correo.com" />
+                        </label>
+                    </div>
+                    <div class="form-row">
+                        <label class="field">
+                            <span class="field-label">Motivo de consulta</span>
+                            <input type="text" placeholder="Ansiedad, duelo, pareja…" />
+                        </label>
+                        <label class="field">
+                            <span class="field-label">Profesional asignado</span>
+                            <select>
+                                <option>Dra. Reyes</option>
+                                <option>Dr. Moral</option>
+                                <option>Dra. Soto</option>
+                            </select>
                         </label>
                     </div>
                     <label class="field">
@@ -96,18 +99,18 @@
                         <button class="button button-ghost" type="reset">Cancelar</button>
                         <button class="button button-primary" type="submit">Guardar paciente</button>
                     </div>
-                    </form>
-                </section>
+                </form>
+            </section>
 
-                <!-- Listado de pacientes -->
-                <section class="panel">
-                    <div class="panel-header-row">
+            <!-- Listado de pacientes -->
+            <section class="panel">
+                <div class="panel-header-row">
                     <h2 class="panel-title">Pacientes registrados</h2>
                     <div class="search-box">
                         <input type="search" placeholder="Buscar paciente…" />
                     </div>
-                    </div>
-                    <div class="table-wrap">
+                </div>
+                <div class="table-wrap">
                     <table class="data-table">
                         <thead>
                             <tr>
@@ -122,89 +125,90 @@
                         <tbody>
                             <tr>
                                 <td>
-                                <div class="cell-patient">
-                                    <div class="avatar avatar-sm">ML</div>
-                                    <span>María López</span>
-                                </div>
+                                    <div class="cell-patient">
+                                        <div class="avatar avatar-sm">ML</div>
+                                        <span>María López</span>
+                                    </div>
                                 </td>
                                 <td>32</td>
                                 <td>Ansiedad</td>
                                 <td>Dra. Reyes</td>
                                 <td><span class="badge badge-active">Activo</span></td>
                                 <td>
-                                <button class="button button-link">Editar</button>
-                                <button class="button button-link">Ficha</button>
+                                    <button class="button button-link">Editar</button>
+                                    <button class="button button-link">Ficha</button>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                <div class="cell-patient">
-                                    <div class="avatar avatar-sm">CR</div>
-                                    <span>Carlos Ruiz</span>
-                                </div>
+                                    <div class="cell-patient">
+                                        <div class="avatar avatar-sm">CR</div>
+                                        <span>Carlos Ruiz</span>
+                                    </div>
                                 </td>
                                 <td>45</td>
                                 <td>Duelo</td>
                                 <td>Dr. Moral</td>
                                 <td><span class="badge badge-active">Activo</span></td>
                                 <td>
-                                <button class="button button-link">Editar</button>
-                                <button class="button button-link">Ficha</button>
+                                    <button class="button button-link">Editar</button>
+                                    <button class="button button-link">Ficha</button>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                <div class="cell-patient">
-                                    <div class="avatar avatar-sm">AT</div>
-                                    <span>Ana Torres</span>
-                                </div>
+                                    <div class="cell-patient">
+                                        <div class="avatar avatar-sm">AT</div>
+                                        <span>Ana Torres</span>
+                                    </div>
                                 </td>
                                 <td>28</td>
                                 <td>Autoestima</td>
                                 <td>Dra. Reyes</td>
                                 <td><span class="badge badge-active">Activo</span></td>
                                 <td>
-                                <button class="button button-link">Editar</button>
-                                <button class="button button-link">Ficha</button>
+                                    <button class="button button-link">Editar</button>
+                                    <button class="button button-link">Ficha</button>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                <div class="cell-patient">
-                                    <div class="avatar avatar-sm">JV</div>
-                                    <span>Javier Vega</span>
-                                </div>
+                                    <div class="cell-patient">
+                                        <div class="avatar avatar-sm">JV</div>
+                                        <span>Javier Vega</span>
+                                    </div>
                                 </td>
                                 <td>16</td>
                                 <td>Conducta</td>
                                 <td>Dra. Soto</td>
                                 <td><span class="badge badge-pending">En evaluación</span></td>
                                 <td>
-                                <button class="button button-link">Editar</button>
-                                <button class="button button-link">Ficha</button>
+                                    <button class="button button-link">Editar</button>
+                                    <button class="button button-link">Ficha</button>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                <div class="cell-patient">
-                                    <div class="avatar avatar-sm">SP</div>
-                                    <span>Sara Pérez</span>
-                                </div>
+                                    <div class="cell-patient">
+                                        <div class="avatar avatar-sm">SP</div>
+                                        <span>Sara Pérez</span>
+                                    </div>
                                 </td>
                                 <td>39</td>
                                 <td>Pareja</td>
                                 <td>Dr. Moral</td>
                                 <td><span class="badge badge-inactive">Finalizado</span></td>
                                 <td>
-                                <button class="button button-link">Editar</button>
-                                <button class="button button-link">Ficha</button>
+                                    <button class="button button-link">Editar</button>
+                                    <button class="button button-link">Ficha</button>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
-                    </div>
-                </section>
-                </section>
-        </main>
-    </body>
+                </div>
+            </section>
+        </section>
+    </main>
+</body>
+
 </html>
