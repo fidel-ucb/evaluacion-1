@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Consultorio Psicológico Norte</title>
+        <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="/css/global.css">
+        <link rel="stylesheet" href="/css/dashboard.css">
+        <link rel="stylesheet" href="/css/sidebar.css">
+    </head>
+    <body>
+        <main class="view-general">
+            <aside class="sidebar">
+                <div class="sidebar-brand">
+                    <div class="logo-circle">N</div>
+                    <span class="logo-name">Norte</span>
+                </div>
+                <nav class="sidebar-nav">
+                    <a href="/dashboard.html" class="nav-item">Área Profesional</a>
+                    <a href="/client-dashboard.html" class="nav-item">Área Paciente</a>
+                    <a href="/history.html" class="nav-item">Historial Clínico</a>
+                    <a href="/patients.html" class="nav-item">Gestor de Pacientes</a>
+                    <a href="/agenda.html" class="nav-item">Agenda</a>
+                </nav>
+                <div class="sidebar-footer">
+                    <div class="user-mini">
+                        <div class="avatar">M</div>
+                        <div>
+                        <p class="user-name">María Pérez</p>
+                        
+                        </div>
+                    </div>
+                    <a href="/login.html" class="nav-item">Cerrar sesión</a>
+                </div>
+            </aside>
+            <section class="view-content">
+                <header class="page-header">
+                    <h1 class="page-title">Mi área personal</h1>
+                    <p class="page-lead">Hola, María. Aquí puedes gestionar tu proceso.</p>
+                </header>
+
+                <div class="patient-welcome">
+                    <img src="https://images.pexels.com/photos/7878206/pexels-photo-7878206.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Bienestar emocional" />
+                    <div class="patient-welcome-text">
+                    <h2>Tu bienestar importa</h2>
+                    <p>
+                        Llevas 6 sesiones de terapia individual. Tu próxima cita es el
+                        jueves a las 10:30. Recuerda traer las notas que escribiste esta
+                        semana.
+                    </p>
+                    <div class="hero-actions">
+                        <label for="nav-agenda" class="button button-primary">Ver mi agenda</label>
+                        <label for="nav-historial" class="button button-ghost">Mi historial</label>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="dashboard-grid">
+                    <div class="dash-card">
+                    <p class="dash-label">Sesiones realizadas</p>
+                    <p class="dash-value">6</p>
+                    </div>
+                    <div class="dash-card">
+                    <p class="dash-label">Próxima cita</p>
+                    <p class="dash-value">Jue</p>
+                    <p class="dash-sub">10:30 — Online</p>
+                    </div>
+                    <div class="dash-card">
+                    <p class="dash-label">Tu terapeuta</p>
+                    <p class="dash-value">DR</p>
+                    <p class="dash-sub">Dra. Reyes</p>
+                    </div>
+                    <div class="dash-card">
+                    <p class="dash-label">Plan activo</p>
+                    <p class="dash-value">12</p>
+                    <p class="dash-sub">sesiones · 6 restantes</p>
+                    </div>
+                </div>
+
+                <section class="panel">
+                    <h2 class="panel-title">Mis próximas citas</h2>
+                    <ul class="list-rows">
+                    <li>
+                        <div class="row-main">
+                        <span class="row-time">Jue 28 · 10:30</span>
+                        <span class="row-name">Sesión individual</span>
+                        </div>
+                        <span class="badge badge-online">Online</span>
+                    </li>
+                    <li>
+                        <div class="row-main">
+                        <span class="row-time">Jue 4 · 10:30</span>
+                        <span class="row-name">Sesión individual</span>
+                        </div>
+                        <span class="badge badge-online">Online</span>
+                    </li>
+                    </ul>
+                </section>
+
+                <section class="panel">
+                    <h2 class="panel-title">Recursos para ti</h2>
+                    <div class="resources-grid">
+                    <article class="resource-card">
+                        <h3>Guía de respiración</h3>
+                        <p>Ejercicio de 5 minutos para momentos de ansiedad.</p>
+                    </article>
+                    <article class="resource-card">
+                        <h3>Diario emocional</h3>
+                        <p>Plantilla para registrar tu estado anímico diario.</p>
+                    </article>
+                    <article class="resource-card">
+                        <h3>Audio de relajación</h3>
+                        <p>15 minutos guiados para antes de dormir.</p>
+                    </article>
+                    </div>
+                </section>
+            </section>
+        </main>
+    </body>
+</html>
