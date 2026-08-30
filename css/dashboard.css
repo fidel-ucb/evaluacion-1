@@ -1,0 +1,50 @@
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.dash-card {
+  background: var(--color-light-neutral);
+  border: 1px solid var(--color-neutral);
+  border-radius: var(--r-md);
+  padding: 1.5rem;
+}
+
+.dash-label { font-size: .8rem; text-transform: uppercase; letter-spacing: .04em; color: var(--color-neutral); font-weight: 600; }
+
+.dash-value {
+  font-family: var(--font-primary);
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--color-neutral);
+  margin: .25rem 0 .1rem;
+}
+
+.dash-sub { font-size: .82rem; color: var(--color-neutral); }
+
+.task-list{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.task-list li{
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    padding: .5rem .9rem;
+}
+
+.task-list input{
+    width: 16px; height: 16px;
+    accent-color: var(--color-primary);
+    cursor: pointer;
+}
+
+.task-list label{
+    font-size: .95rem;
+    color: var(--color-neutral);
+    cursor: pointer;
+}
