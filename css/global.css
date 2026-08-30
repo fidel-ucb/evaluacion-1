@@ -170,6 +170,18 @@ input:focus{
     font-size: .85rem;
 }
 
+.button-icon{
+    width: 36px; 
+    height: 36px;
+    border-radius: 50%;
+    border: 1.5px solid var(--color-neutral);
+    background: #fff;
+    cursor: pointer;
+    font-size: 1.1rem;
+    color: var(--color-neutral);
+    transition: all var(--t-fast);
+}
+
 .button-link:hover{
     text-decoration: underline;
 }
